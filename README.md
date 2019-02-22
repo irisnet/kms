@@ -80,7 +80,7 @@ To install `tmkms`, do the following:
 2. Run the following to install Tendermint KMS using Rust's `cargo` tool:
 
 ```
-$ cargo install tmkms
+$ cargo install --features yubihsm,ledgertm --path .
 ```
 
 3. Copy the example `tmkms.toml` file to a local directory (e.g. `~/.tmkms`):
