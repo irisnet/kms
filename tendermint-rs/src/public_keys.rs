@@ -79,7 +79,7 @@ impl Display for AccountKey {
                 key_bytes
             }
         };
-        bech32::encode("cosmospub", &key_bytes).fmt(f)
+        bech32::encode("icp", &key_bytes).fmt(f)
     }
 }
 
@@ -194,7 +194,7 @@ mod tests {
 
         assert_eq!(
             example_key.to_string(),
-            "cosmosvalconspub1zcjduepqfgjuveq2raetnjt4xwpffm63kmguxv2chdhvhf5lhslmtgeunh8qmf7exk"
+            "icp1zcjduepqfgjuveq2raetnjt4xwpffm63kmguxv2chdhvhf5lhslmtgeunh8qtgl66f"
         );
     }
 
@@ -209,7 +209,7 @@ mod tests {
 
         assert_eq!(
             example_key.to_string(),
-            "cosmospub1addwnpepq2skx090esq7h7md0r3e76r6ruyet330e904r6k3pgpwuzl92x6actrt4uq"
+            "icp1addwnpepq2skx090esq7h7md0r3e76r6ruyet330e904r6k3pgpwuzl92x6acs03va4"
         );
     }
 }
